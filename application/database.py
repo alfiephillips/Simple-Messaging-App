@@ -8,7 +8,7 @@ DB_FILE = "database.db"
 MESSAGES_TABLE = "Messages"
 USER_TABLE = "Users"
 
-class Database:
+class DataBase:
     """
     Used to connect, write and read from a local sqlite3 database.
     """

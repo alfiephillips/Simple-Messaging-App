@@ -44,6 +44,7 @@ def logout():
     return redirect(url_for("views.login"))
 
 @view.route("/")
+@view.route("/home", methods=["GET", "POST", "PUT", "DELETE"])
 def home():
     """
     Displays the homepage if user is logged in
@@ -51,7 +52,6 @@ def home():
     """
 
     if NAME_KEY not in session:
-        flash("0You must be logged in to view this page!")
         return redirect(url_for("views.login"))
 
     return render_template("index.html", **{"session": session})
