@@ -14,11 +14,13 @@ def create_app():
         # Imports
 
         from .views import view
+        from .api import api
         from .filters import _slice
         from .database import DataBase
 
         # REGISTER ROUTES
         app.register_blueprint(view, url_prefix="/")
+        app.register_blueprint(api, url_prefix="/api")
 
         # REGISTER CONTEXT PROCESSOR FOR SESSIONS
         @app.context_processor
