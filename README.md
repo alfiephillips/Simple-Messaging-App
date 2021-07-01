@@ -1,6 +1,6 @@
-# Chat-App
+# Message App
 
-Chat-App is a simple messaging app using SocketIO and Flask.
+Message App is a simple messaging app using SocketIO and Flask.
 
 ## Installation
 
